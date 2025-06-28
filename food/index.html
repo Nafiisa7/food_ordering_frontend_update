@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodExpress - Order Delicious Food Online</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Food<span>Express</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#" class="cart-btn"
+                ><i class="fas fa-shopping-cart"></i> Cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <video autoplay muted loop id="myvideo">
+        <source src="./video/background.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <h2>Delicious Food Delivered To Your Doorstep</h2>
+        <p>Order from your favorite restaurants with just a few clicks</p>
+        <a href="#menu" class="btn">Order Now</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+          <button class="active">All</button>
+          <button><a href="./pizza.html">Pizza</a></button>
+          <button><a href="./burgers.html">Burgers</a></button>
+          <button><a href="./pasta.html">Pasta</a></button>
+          <button><a href="./salads.html">Salads</a></button>
+          <button><a href="./desserts.html">Desserts</a></button>
+        </div>
+
+        <div class="menu-items">
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Margherita Pizza"
+            />
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+            <div class="item-footer">
+              <span class="price">$12.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Cheeseburger"
+            />
+            <h3>Classic Cheeseburger</h3>
+            <p>Beef patty with cheese, lettuce, tomato, and special sauce</p>
+            <div class="item-footer">
+              <span class="price">$8.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Spaghetti Carbonara"
+            />
+            <h3>Spaghetti Carbonara</h3>
+            <p>Pasta with creamy egg sauce, pancetta, and parmesan</p>
+            <div class="item-footer">
+              <span class="price">$10.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Caesar Salad"
+            />
+            <h3>Caesar Salad</h3>
+            <p>Romaine lettuce, croutons, parmesan with Caesar dressing</p>
+            <div class="item-footer">
+              <span class="price">$7.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Chocolate Lava Cake"
+            />
+            <h3>Chocolate Lava Cake</h3>
+            <p>
+              Warm chocolate cake with a molten center, served with ice cream
+            </p>
+            <div class="item-footer">
+              <span class="price">$6.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="Pepperoni Pizza"
+            />
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and pepperoni</p>
+            <div class="item-footer">
+              <span class="price">$13.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Welcome to FoodExpress, your premier online food ordering service.
+              We partner with the best restaurants in town to bring you
+              delicious meals right to your doorstep.
+            </p>
+            <p>
+              Our mission is to make food ordering simple, fast, and enjoyable.
+              With just a few clicks, you can have your favorite meals delivered
+              in no time.
+            </p>
+            <p>
+              We carefully select our restaurant partners to ensure the highest
+              quality food and service for our customers.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="Our Team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Food Street, Foodville,
+              FC 12345
+            </p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@foodexpress.com</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>FoodExpress</h3>
+            <p>
+              Delicious food delivered fast to your doorstep. Order from your
+              favorite restaurants with ease.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get updates on special offers</p>
+            <form>
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 FoodExpress. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>

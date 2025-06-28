@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burgers Menu | FoodExpress</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Food<span>Express</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li>
+              <a href="#" class="cart-btn"
+                ><i class="fas fa-shopping-cart"></i> Cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      "
+    >
+      <div class="container">
+        <h2>Juicy Burgers</h2>
+        <p>100% premium beef with fresh toppings</p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-items">
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Classic Cheeseburger"
+            />
+            <h3>Classic Cheeseburger</h3>
+            <p>Beef patty with cheese, lettuce, tomato, and special sauce</p>
+            <div class="item-footer">
+              <span class="price">$8.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Bacon Burger"
+            />
+            <h3>Bacon Burger</h3>
+            <p>Beef patty with crispy bacon, cheddar, and BBQ sauce</p>
+            <div class="item-footer">
+              <span class="price">$10.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Mushroom Swiss Burger"
+            />
+            <h3>Mushroom Swiss Burger</h3>
+            <p>Beef patty with sautéed mushrooms and Swiss cheese</p>
+            <div class="item-footer">
+              <span class="price">$9.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Veggie Burger"
+            />
+            <h3>Veggie Burger</h3>
+            <p>Plant-based patty with avocado, lettuce, and tomato</p>
+            <div class="item-footer">
+              <span class="price">$8.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

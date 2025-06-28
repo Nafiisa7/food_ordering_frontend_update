@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasta Menu | FoodExpress</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Food<span>Express</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li>
+              <a href="#" class="cart-btn"
+                ><i class="fas fa-shopping-cart"></i> Cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      "
+    >
+      <div class="container">
+        <h2>Delicious Pasta</h2>
+        <p>Authentic Italian pasta dishes made fresh daily</p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-items">
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Spaghetti Carbonara"
+            />
+            <h3>Spaghetti Carbonara</h3>
+            <p>Pasta with creamy egg sauce, pancetta, and parmesan</p>
+            <div class="item-footer">
+              <span class="price">$12.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Fettuccine Alfredo"
+            />
+            <h3>Fettuccine Alfredo</h3>
+            <p>Creamy Parmesan sauce with fettuccine pasta</p>
+            <div class="item-footer">
+              <span class="price">$13.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1608755728616-405f8bcc8d6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Penne Arrabiata"
+            />
+            <h3>Penne Arrabiata</h3>
+            <p>Penne pasta with spicy tomato sauce and garlic</p>
+            <div class="item-footer">
+              <span class="price">$11.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Lasagna"
+            />
+            <h3>Lasagna</h3>
+            <p>Layers of pasta, meat sauce, and cheese baked to perfection</p>
+            <div class="item-footer">
+              <span class="price">$14.99</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

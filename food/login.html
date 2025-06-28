@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | FoodExpress</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Additional styles specific to login page */
+      .login-hero {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 60px;
+      }
+
+      .login-hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .login-container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .login-container h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-size: 24px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #555;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #ff6b6b;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 12px;
+        background: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .login-btn:hover {
+        background: #ff5252;
+      }
+
+      .login-options {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .login-btn a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .login-options a {
+        color: #ff6b6b;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .login-options a:hover {
+        color: #ff5252;
+      }
+
+      .social-login {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .social-login p {
+        color: #777;
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      .social-login p::before,
+      .social-login p::after {
+        content: "";
+        display: inline-block;
+        width: 30%;
+        height: 1px;
+        background: #ddd;
+        position: absolute;
+        top: 50%;
+      }
+
+      .social-login p::before {
+        left: 0;
+      }
+
+      .social-login p::after {
+        right: 0;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+      }
+
+      .social-icon:hover {
+        transform: translateY(-3px);
+      }
+
+      .facebook {
+        background: #3b5998;
+      }
+
+      .google {
+        background: #db4437;
+      }
+
+      .twitter {
+        background: #1da1f2;
+      }
+
+      .register-link {
+        text-align: center;
+        margin-top: 30px;
+        color: #666;
+      }
+
+      .register-link a {
+        color: #ff6b6b;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .register-link a:hover {
+        color: #ff5252;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Food<span>Express</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#menu">Menu</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li>
+              <a href="login.html" class="cart-btn"
+                ><i class="fas fa-user"></i> Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="login-hero">
+      <div class="container">
+        <h2>Welcome Back!</h2>
+        <p>Login to your FoodExpress account</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="login-container">
+        <h3>Sign In</h3>
+        <form>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-btn">
+            <a href="./index.html">Login</a>
+          </button>
+          <div class="login-options">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon google"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a href="#" class="social-icon twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="register-link">
+            Don't have an account? <a href="register.html">Register here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer same as other pages -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>FoodExpress</h3>
+            <p>
+              Delicious food delivered fast to your doorstep. Order from your
+              favorite restaurants with ease.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get updates on special offers</p>
+            <form>
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 FoodExpress. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
